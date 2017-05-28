@@ -460,6 +460,7 @@ void main()
 		if (passion < 15)			// They cannot become a programmer
 		{
 			cout << "Honestly, you should find another job!";
+			system("pause");
 			return;
 		}
 	}
@@ -508,6 +509,7 @@ void main()
 		default:
 			break;
 		}
+		system("pause");
 		return;
 	}
 	else if (att < 15)
@@ -534,6 +536,7 @@ void main()
 			break;
 		}
 		cout << " field to learn more from them.";
+		system("pause");
 		return;
 	}
 	else
@@ -560,8 +563,7 @@ void main()
 			break;
 		}
 		cout << ". Keep working on!";
+		system("pause");
 		return;
 	}
-
-	system("pause");
 }
