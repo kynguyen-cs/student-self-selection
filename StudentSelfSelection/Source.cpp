@@ -470,7 +470,8 @@ void main()
 	att += initAtt();				// Evaluate their attitudes
 	system("pause");
 	system("CLS");
-
+	
+	cout << "Now, come to the next part!" << endl;
 	se += seQuestion();				// Evaluate their abilities
 	system("pause");
 	system("CLS");
@@ -483,6 +484,7 @@ void main()
 	system("pause");
 	system("CLS");
 
+	cout << "Here is my suggestion:" << endl;
 	if (score < 12)
 	{
 		cout << "If you study harder, you could become a good ";
@@ -506,6 +508,7 @@ void main()
 		default:
 			break;
 		}
+		return;
 	}
 	else if (att < 15)
 	{
@@ -531,6 +534,33 @@ void main()
 			break;
 		}
 		cout << " field to learn more from them.";
+		return;
+	}
+	else
+	{
+		cout << "You will succeed in ";
+		switch (findMax(se, it, ce))
+		{
+		case 1:
+		{
+			cout << "Software Engineer";
+			break;
+		}
+		case 2:
+		{
+			cout << "Information Technology";
+			break;
+		}
+		case 3:
+		{
+			cout << "Computer Engineer";
+			break;
+		}
+		default:
+			break;
+		}
+		cout << ". Keep working on!";
+		return;
 	}
 
 	system("pause");
